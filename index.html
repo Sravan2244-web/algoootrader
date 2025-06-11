@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Algo Telugu Trading</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f3f4f6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 60px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1 {
+      color: #111827;
+    }
+
+    p {
+      color: #4b5563;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .price {
+      font-size: 20px;
+      color: #ef4444;
+      text-decoration: line-through;
+    }
+
+    .discount {
+      color: #10b981;
+      font-size: 26px;
+      margin: 10px 0;
+    }
+
+    .note {
+      font-size: 16px;
+      color: #f59e0b;
+      margin-bottom: 20px;
+    }
+
+    .upi {
+      margin: 30px 0;
+    }
+
+    .qr-img {
+      width: 220px;
+      height: 220px;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #1d4ed8;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #9ca3af;
+    }
+  </style>
+
+  <script>
+    function redirectToUPI() {
+      setTimeout(function () {
+        window.location.href = "https://wa.me/917702456800";
+      }, 10000);
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Algo Telugu Trading</h1>
+    <p>Unlock profitable trading strategies and automation tools in Telugu.</p>
+
+    <div class="price">₹3,999/-</div>
+    <div class="note">25% Discount Applied!</div>
+    <div class="discount">Now Only ₹2,999/-</div>
+
+    <div class="upi">
+      <p><strong>Pay via UPI</strong> by scanning the QR code or clicking the button:</p>
+      <img
+        src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=upi://pay?pa=sravankumar36896@oksbi&pn=AlgoTelugu&am=2999&cu=INR"
+        alt="UPI QR Code"
+        class="qr-img"
+      />
+      <br />
+      <a
+        class="btn"
+        href="upi://pay?pa=sravankumar36896@oksbi&pn=AlgoTelugu&am=2999&cu=INR"
+        onclick="redirectToUPI()"
+      >
+        Pay via UPI App
+      </a>
+    </div>
+
+    <p>After payment, you’ll be redirected to WhatsApp to send your screenshot.</p>
+
+    <a class="btn" href="https://wa.me/917702456800" target="_blank">
+      Contact on WhatsApp
+    </a>
+  </div>
+
+  <footer>
+    &copy; 2025 Algo Telugu Trading. All rights reserved.
+  </footer>
+</body>
+</html>
